@@ -13,6 +13,22 @@ A custom implementation of vLLM inference engine with attention mechanism benchm
 
 Benchmarking on flash attention in prefilling time and paged attention in decoding time are provided.
 
+## Run on Google Colab
+
+Macs without an NVIDIA CUDA GPU can use
+[MinivLLM_Colab.ipynb](./MinivLLM_Colab.ipynb) to run the project on a
+Google Colab GPU.
+
+1. Upload and open `MinivLLM_Colab.ipynb` in Colab, or open it from a GitHub
+   repository that contains this notebook.
+2. Select `Runtime → Change runtime type → T4 GPU`.
+3. Select `Runtime → Run all`.
+
+The notebook clones `Wenyueh/MinivLLM`, installs only the extra Python
+dependencies, and downloads Qwen3-0.6B. It reuses Colab's CUDA-enabled
+PyTorch/Triton installation and does not install `vllm`. To run your own
+version, change `REPO_URL` in the notebook to your GitHub repository.
+
 **New to vLLM?** Check out [HowToApproachvLLM.md](HowToApproachvLLM.md) for a step-by-step implementation guide covering layers, models, paged attention, CUDA graphs, and scheduling.
 
 ## Quickstart

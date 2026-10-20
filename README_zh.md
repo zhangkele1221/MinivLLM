@@ -12,6 +12,19 @@
 
 提供了预填充阶段的FlashAttention以及解码阶段的Pageattention的基准测试。
 
+## 在 Google Colab 中运行
+
+Mac 没有 NVIDIA CUDA GPU 时，可以直接使用项目中的
+[MinivLLM_Colab.ipynb](./MinivLLM_Colab.ipynb) 在 Google Colab GPU 上运行。
+
+1. 在 Colab 中上传并打开 `MinivLLM_Colab.ipynb`，或者从已推送该文件到 GitHub 的仓库直接打开。
+2. 在 `Runtime → Change runtime type` 中选择 `T4 GPU`。
+3. 选择 `Runtime → Run all` 并等待模型下载和推理完成。
+
+Notebook 会自动克隆 `Wenyueh/MinivLLM`、安装最小依赖并下载
+Qwen3-0.6B。它使用 Colab 预装的 CUDA 版 PyTorch/Triton，不会安装 `vllm`。
+如果运行自己的修改版，请把 Notebook 中的 `REPO_URL` 换成自己的 GitHub 仓库地址。
+
 
 **第一次接触vLLM?** 阅读 [HowToApproachvLLM_zh.md](HowToApproachvLLM_zh.md) 从零开始实现vLLM！学习vLLM中layers、models、Pageattention、FlashAttention、CUDA graphs以及调度实现。
 
