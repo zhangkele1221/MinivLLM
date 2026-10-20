@@ -29,6 +29,9 @@ dependencies, and downloads Qwen3-0.6B. It reuses Colab's CUDA-enabled
 PyTorch/Triton installation and does not install `vllm`. To run your own
 version, change `REPO_URL` in the notebook to your GitHub repository.
 
+Colab coverage and the deferred GPU test checklist are recorded in
+[Colab learning scope](docs/Colab_Learning_Scope_zh.md).
+
 **New to vLLM?** Check out [HowToApproachvLLM.md](HowToApproachvLLM.md) for a step-by-step implementation guide covering layers, models, paged attention, CUDA graphs, and scheduling.
 
 ## Quickstart

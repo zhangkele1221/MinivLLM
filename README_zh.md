@@ -25,6 +25,9 @@ Notebook 会自动克隆 `Wenyueh/MinivLLM`、安装最小依赖并下载
 Qwen3-0.6B。它使用 Colab 预装的 CUDA 版 PyTorch/Triton，不会安装 `vllm`。
 如果运行自己的修改版，请把 Notebook 中的 `REPO_URL` 换成自己的 GitHub 仓库地址。
 
+Colab 当前能学什么、哪些内容需要后续租用 GPU 验证，记录在
+[Colab 学习范围与后续 GPU 测试清单](docs/Colab_Learning_Scope_zh.md)。
+
 
 **第一次接触vLLM?** 阅读 [HowToApproachvLLM_zh.md](HowToApproachvLLM_zh.md) 从零开始实现vLLM！学习vLLM中layers、models、Pageattention、FlashAttention、CUDA graphs以及调度实现。
 
